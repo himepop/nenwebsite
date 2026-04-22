@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nen Notebook — Fics</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/data.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="fics">
+  <div class="page">
+    <div class="window">
+  <div class="window-bar">
+    <div class="dots"><span class="dot pink"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+    <div>⋯ ✦</div>
+  </div>
+  <header class="site-header">
+    <div class="header-grid">
+      <div class="header-box"><img src="assets/icons/cat.svg" alt="Nen Notebook mascot" /></div>
+      <div class="title-wrap">
+        <div class="sparkles">✦ ✧ ✦</div>
+        <h1>NEN<br>NOTEBOOK</h1>
+        <p>fic archive</p>
+      </div>
+      <div class="header-box"><img src="assets/icons/notebook.svg" alt="Notebook icon" /></div>
+    </div>
+  </header>
+    <div class="shell">
+      <aside class="sidebar panel">
+  <button class="btn nav-toggle" type="button">open navigation</button>
+  <div class="nav-wrap closed">
+    <div class="ribbon">navigate</div>
+    <ul class="nav">
+      <li><a href="index.html" data-page="home"><img class="icon" src="assets/icons/home.svg" alt="">Home</a></li>
+      <li><a href="about.html" data-page="about"><img class="icon" src="assets/icons/about.svg" alt="">About</a></li>
+      <li><a href="fics.html" data-page="fics"><img class="icon" src="assets/icons/book.svg" alt="">Fics</a></li>
+      <li><a href="journal.html" data-page="journal"><img class="icon" src="assets/icons/journal.svg" alt="">Journal</a></li>
+      <li><a href="guestbook.html" data-page="guestbook"><img class="icon" src="assets/icons/guestbook.svg" alt="">Guestbook</a></li>
+      <li><a href="links.html" data-page="links"><img class="icon" src="assets/icons/link.svg" alt="">Links + Assets</a></li>
+    </ul>
+  </div>
+  <div class="note">
+    <strong>site note</strong>
+    <p>updates most often happen late at night (or very early in the morning).</p>
+  </div>
+  <div class="scene"><img src="assets/previews/fics-mockup.png" alt="Mockup preview"></div>
+</aside>
+      <main class="content">
+        <section class="panel">
+          <div class="ribbon">fic archive</div>
+          <div class="filters">
+            <label>rating
+              <select id="filter-rating"><option>All</option><option>General</option><option>Teen</option><option>Mature</option><option>Explicit</option></select>
+            </label>
+            <label>status
+              <select id="filter-status"><option>All</option><option>Complete</option><option>WIP</option><option>On Hold</option></select>
+            </label>
+            <label>pairing / characters
+              <select id="filter-pairing"><option>All</option><option>Kurapika & OC</option><option>Gen</option><option>Gon & Killua</option><option>Leorio & Kurapika</option><option>Hisoka & OC</option></select>
+            </label>
+            <label>genre
+              <select id="filter-genre"><option>All</option><option>Drama</option><option>Hurt/Comfort</option><option>Adventure</option><option>Comfort</option><option>Psychological</option></select>
+            </label>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
+            <div id="work-count">6 works found</div>
+            <div class="muted">vanilla JS filtering</div>
+          </div>
+          <div id="all-fics" class="fic-grid" style="margin-top:14px"></div>
+        </section>
+
+        <div class="grid-3">
+          <section class="panel">
+            <div class="ribbon green">featured series</div>
+            <ul class="list">
+              <li><strong>Silken Chains</strong><br><span class="muted">3 works · 147k words</span><br>Vows, bargains, and the threads that tie people together.</li>
+              <li><strong>Greed Island Files</strong><br><span class="muted">2 works · 59k words</span><br>Exploring the world’s most dangerous game — one square at a time.</li>
+              <li><strong>Fractured Hearts</strong><br><span class="muted">4 works · 76k words</span><br>Stories about breaking, healing, and everything in between.</li>
+            </ul>
+          </section>
+          <section class="panel">
+            <div class="ribbon">WIP tracker</div>
+            <ul class="list">
+              <li>After the Auction<div class="progress"><span style="width:73%"></span></div></li>
+              <li>Notes from Greed Island<div class="progress"><span style="width:80%"></span></div></li>
+              <li>Tea at Midnight<div class="progress"><span style="width:53%"></span></div></li>
+              <li>The Quiet Between Battles<div class="progress"><span style="width:41%"></span></div></li>
+            </ul>
+          </section>
+          <section class="panel">
+            <div class="ribbon yellow">recently updated</div>
+            <ul class="list">
+              <li>05.12.24 — Scarlet Vows (updated ch. 9)</li>
+              <li>05.09.24 — Chains Unbroken (updated epilogue)</li>
+              <li>05.04.24 — Atlas of Borrowed Light (ch. 7)</li>
+              <li>04.28.24 — After the Auction (ch. 4)</li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="page footer panel">sortable archive, WIP tracker, and series panels<small>Works locally without any build tools.</small></div>
+</body></html>
